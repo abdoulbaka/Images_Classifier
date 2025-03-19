@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Résultat</title>
+</head>
+<body>
+    <h2>Résultat de la prédiction</h2>
+    <img src="{{ img_path }}" alt="Image chargée" width="300">
+    <h3>Classe prédite : {{ class_name }}</h3>
+    <a href="{% url 'predict_image' %}">Prédire une autre image</a>
+</body>
+</html>

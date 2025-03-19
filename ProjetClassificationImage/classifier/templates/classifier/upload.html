@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Uploader une Image</title>
+</head>
+<body>
+    <h2>Uploader une image de chien ou chat</h2>
+    <form action="{% url 'predict_image' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="image" required>
+        <button type="submit">Prédire</button>
+    </form>
+</body>
+</html>
